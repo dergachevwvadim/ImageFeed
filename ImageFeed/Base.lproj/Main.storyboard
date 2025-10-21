@@ -64,6 +64,11 @@
                                                 <constraint firstItem="lVC-Yo-KOe" firstAttribute="bottom" secondItem="wcw-7M-jSU" secondAttribute="bottom" constant="4" id="ucZ-aa-U8e"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellImage" destination="lVC-Yo-KOe" id="Ilb-cr-EBV"/>
+                                            <outlet property="dateLabel" destination="wcw-7M-jSU" id="m63-3y-avH"/>
+                                            <outlet property="likeButton" destination="JPt-jU-idq" id="SNX-DV-nmg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
