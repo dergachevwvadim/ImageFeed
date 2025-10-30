@@ -9,6 +9,9 @@ import UIKit
 
 final class SingleImageViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBAction private func didTapBackButton() {
+        dismiss(animated: true, completion: nil)
+    }
     
     var image: UIImage? {
         didSet {
@@ -22,5 +25,6 @@ final class SingleImageViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = image
     }
+    
     
 }
