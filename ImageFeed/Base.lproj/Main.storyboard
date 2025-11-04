@@ -255,6 +255,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="sharing_button"/>
+                                <connections>
+                                    <action selector="didTapShareButton" destination="gzZ-p9-62K" eventType="touchUpInside" id="fdz-nV-wBo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h5s-fT-AO1"/>
