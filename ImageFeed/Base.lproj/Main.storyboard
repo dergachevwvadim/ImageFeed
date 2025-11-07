@@ -121,68 +121,10 @@
                     <view key="view" contentMode="scaleToFill" id="NTJ-Ee-dcP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Jbi-DE-cx2" userLabel="Avatar image view">
-                                <rect key="frame" x="16" y="128" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="GF8-j2-fLT"/>
-                                    <constraint firstAttribute="height" constant="70" id="mcw-ao-R36"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-YV-h4W" userLabel="Username label">
-                                <rect key="frame" x="16" y="206" width="165" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSq-Gs-DB5" userLabel="Login name label">
-                                <rect key="frame" x="16" y="235" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO4-dV-Wm5" userLabel="Description label">
-                                <rect key="frame" x="16" y="264" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD9-bE-z22" userLabel="Logout Button">
-                                <rect key="frame" x="354" y="141" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="4EV-Z3-XnM"/>
-                                    <constraint firstAttribute="width" constant="44" id="nXK-3l-ElN"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="exitButton"/>
-                                <connections>
-                                    <action selector="didTapLogoutButton:" destination="zb4-Z5-Bcq" eventType="touchUpInside" id="wI8-ma-sBP"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Fhu-HQ-kmf"/>
                         <color key="backgroundColor" name="YP Black (iOS)"/>
-                        <constraints>
-                            <constraint firstItem="CO4-dV-Wm5" firstAttribute="leading" secondItem="Fhu-HQ-kmf" secondAttribute="leading" constant="16" id="FLL-0z-Wdb"/>
-                            <constraint firstItem="TPT-YV-h4W" firstAttribute="leading" secondItem="Fhu-HQ-kmf" secondAttribute="leading" constant="16" id="FaB-iJ-nvo"/>
-                            <constraint firstItem="MSq-Gs-DB5" firstAttribute="leading" secondItem="Fhu-HQ-kmf" secondAttribute="leading" constant="16" id="TRq-EA-6PN"/>
-                            <constraint firstItem="Jbi-DE-cx2" firstAttribute="leading" secondItem="Fhu-HQ-kmf" secondAttribute="leading" constant="16" id="Wh5-iy-yWG"/>
-                            <constraint firstItem="TPT-YV-h4W" firstAttribute="top" secondItem="Jbi-DE-cx2" secondAttribute="bottom" constant="8" id="jqM-ql-VT7"/>
-                            <constraint firstItem="YD9-bE-z22" firstAttribute="top" secondItem="Fhu-HQ-kmf" secondAttribute="top" constant="45" id="jsj-eQ-wRg"/>
-                            <constraint firstItem="Fhu-HQ-kmf" firstAttribute="trailing" secondItem="YD9-bE-z22" secondAttribute="trailing" constant="16" id="p4w-Ni-8Ji"/>
-                            <constraint firstItem="CO4-dV-Wm5" firstAttribute="top" secondItem="MSq-Gs-DB5" secondAttribute="bottom" constant="8" id="qM8-mT-65G"/>
-                            <constraint firstItem="MSq-Gs-DB5" firstAttribute="top" secondItem="TPT-YV-h4W" secondAttribute="bottom" constant="8" id="t6n-XL-vv4"/>
-                            <constraint firstItem="Jbi-DE-cx2" firstAttribute="top" secondItem="Fhu-HQ-kmf" secondAttribute="top" constant="32" id="wN9-9y-vgS"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="f4x-zR-SkA"/>
-                    <connections>
-                        <outlet property="avatarImageView" destination="Jbi-DE-cx2" id="r3S-Ss-5qN"/>
-                        <outlet property="descriptionLabel" destination="CO4-dV-Wm5" id="toF-ge-Uo2"/>
-                        <outlet property="loginNameLabel" destination="MSq-Gs-DB5" id="ju0-dD-ZDF"/>
-                        <outlet property="logoutButton" destination="YD9-bE-z22" id="axN-jr-ca9"/>
-                        <outlet property="usernameLabel" destination="TPT-YV-h4W" id="raK-rA-YNw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IqS-H9-NNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,7 +198,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="sharing_button"/>
                                 <connections>
-                                    <action selector="didTapShareButton" destination="gzZ-p9-62K" eventType="touchUpInside" id="fdz-nV-wBo"/>
+                                    <action selector="didTapShareButton:" destination="gzZ-p9-62K" eventType="touchUpInside" id="fix-yf-bdT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -286,8 +228,6 @@
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
-        <image name="avatar" width="175" height="175"/>
-        <image name="exitButton" width="20" height="22"/>
         <image name="likeButtonOn" width="30" height="27.5"/>
         <image name="nav_back_button" width="9" height="16"/>
         <image name="sharing_button" width="50" height="50"/>
